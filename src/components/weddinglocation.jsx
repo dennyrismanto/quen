@@ -50,7 +50,7 @@ export const WeddingLocation = () => {
           Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami:
         </p>
         <img
-          className="w-28 h-28 mb-4 md:w-48 md:h-56 md:rounded-full"
+          className="w-28 h-28 mb-4 md:w-48 md:h-56 rounded-full"
           src={lia}
           alt="side1"
         />
@@ -60,7 +60,7 @@ export const WeddingLocation = () => {
         </p>
         <p className="text-base mb-2 font-chakra-petch font-medium">{`Bapak Husin (Alm.) & Ibu Siti Zainab`}</p>
         <img
-          className="w-28 h-28 mb-4 md:w-48 md:h-56 md:rounded-full "
+          className="w-28 h-28 mb-4 md:w-48 md:h-56 rounded-full "
           src={denny}
           alt="side1"
         />
