@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import side_atas_image from "/src/public/photos/side_atas.png";
 import side_bawah_image from "/src/public/photos/side_bawah.png";
 import frame_atas_image from "/src/public/photos/frame_atas.png";
@@ -43,6 +44,9 @@ export const Home = () => {
           Kota Tangerang
         </p>
       </div>
+      <Link href="/location">
+        <button>Click</button>
+      </Link>
       <div class="flex justify-end items-end">
         <img
           class="w-32 h-32 -mt-9 md:w-56 md:h-56 md:-mt-60 md:rounded-none rounded-none"
