@@ -7,7 +7,7 @@ import frame_bawah_image from "/src/public/photos/frame_bawah.png";
 export const Home = () => {
   return (
     <div>
-      <div class="flex justify-start items-start">
+      <div class="absolute left-0 top-0">
         <img
           class="w-28 h-28 md:w-56 md:h-56 md:rounded-none rounded-none"
           src={side_atas_image}
@@ -15,7 +15,7 @@ export const Home = () => {
         ></img>
       </div>
       <div class="flex flex-col justify-center items-center">
-        <p class="text-yellow-600 text-3xl p-2 -mt-10 md:text-6xl md:-mt-48 md:mb-4 font-indie-flower font-bold">
+        <p class="text-yellow-600 mt-28 text-3xl md:text-6xl font-indie-flower font-bold">
           The Wedding
         </p>
         <p class="text-yellow-600 text-base md:text-xl font-chakra-petch">
@@ -40,13 +40,13 @@ export const Home = () => {
         <p class="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch">
           | Tanggal masih rahasia Allah |
         </p>
-        <p class="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch">
+        <p class="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch mb-6 md:mb-14">
           Kota Tangerang
         </p>
       </div>
-      <div class="flex justify-end items-end">
+      <div class="absolute bottom-0 right-0">
         <img
-          class="w-32 h-32 -mt-9 md:w-56 md:h-56 md:-mt-60 md:rounded-none rounded-none"
+          class="w-32 h-32 md:w-56 md:h-56 md:rounded-none rounded-none"
           src={side_bawah_image}
           alt="side1"
         />
