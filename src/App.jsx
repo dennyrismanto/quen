@@ -9,7 +9,7 @@ function App() {
   const [Modal, setModal] = useState("");
   return (
     <div className={`w-full h-full bg-lala-home`}>
-      <Route path="/hallo/:name">
+      <Route path="/name/:name">
         {(params) => (
           <div
             class={`fixed z-10 inset-0 overflow-y-auto ${Modal}`}
