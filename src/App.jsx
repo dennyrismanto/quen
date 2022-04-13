@@ -7,8 +7,9 @@ import { Chat } from "./components/chat";
 
 function App() {
   const [Modal, setModal] = useState("");
+
   return (
-    <div className={`w-full h-full bg-lala-home`}>
+    <div className={`w-full h-full bg-lala-home pb-2 md:pb-6`}>
       <Route path="/name/:name">
         {(params) => (
           <div
@@ -17,6 +18,7 @@ function App() {
             role="dialog"
             aria-modal="true"
           >
+            {console.log(params)}
             <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
               <div
                 class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
@@ -26,9 +28,7 @@ function App() {
               <span
                 class="hidden sm:inline-block sm:align-middle sm:h-screen"
                 aria-hidden="true"
-              >
-                &#8203;
-              </span>
+              ></span>
 
               <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
                 <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
@@ -60,7 +60,7 @@ function App() {
 
                       <div class="mt-2">
                         <p class="text-sm text-gray-500">
-                          {`Undangan untuk ` + params.name}
+                          {`Undangan untuk ` + decodeURIComponent(params.name)}
                         </p>
                       </div>
                     </div>
