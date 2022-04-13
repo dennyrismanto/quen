@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/" },
     { "source": "/(.*)", "destination": "/location" },
-    { "source": "/(.*)", "destination": "/name/:name" },
+    { "source": "/(.*)", "destination": "/name/:name*" },
     { "source": "/(.*)", "destination": "/chat" }
   ]
 }
