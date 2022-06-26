@@ -60,10 +60,9 @@ function App() {
           </>
         )}
       </Route>
-
       <Route path="/" component={Home} />
       <Route path="/location" component={WeddingLocation} />
-      <Route path="/chat" component={Chat} />
+      <Route path="/wishes" component={Chat} />
     </div>
   );
 }
