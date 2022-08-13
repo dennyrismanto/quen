@@ -4,14 +4,12 @@ import side_bawah_image from "/src/public/photos/side_bawah.png";
 import frame_atas_image from "/src/public/photos/frame_atas.png";
 import frame_bawah_image from "/src/public/photos/frame_bawah.png";
 import { NavBar } from "./navbar";
-import { useEffect } from "react";
-import axios from "axios";
 
 export const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="">
+      <div className="pb-[100px]">
         <div className="absolute left-0 top-12 md:left-0 md:top-0">
           <img
             className="w-28 h-28 md:w-56 md:h-56 md:rounded-none rounded-none"
@@ -43,7 +41,7 @@ export const Home = () => {
             Save the date
           </p>
           <p className="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch">
-            | Tanggal masih rahasia Allah |
+            | 15 Oktober 2022 |
           </p>
           <p className="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch mb-6 md:mb-14">
             Kota Tangerang

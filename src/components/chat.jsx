@@ -4,6 +4,9 @@ import firebase from "../../utility/firebase";
 import { NavBar } from "./navbar";
 import { Dialog } from "@headlessui/react";
 import { useModalChat } from "../modules/modal-chat.store";
+import border from "/src/public/photos/border.png";
+import frame_atas_image from "/src/public/photos/frame_atas.png";
+import dot_chat from "/src/public/photos/dot_chat.png";
 
 export const Chat = (props) => {
   const [namePerson, setNamePerson] = useState("");
@@ -31,37 +34,52 @@ export const Chat = (props) => {
     <>
       <NavBar />
       <Modal modal={shown} />
-      <div className="flex flex-col justify-center items-center mt-20">
-        <p className="text-4xl md:text-6xl font-dancing-script my-6">
-          Wedding Wishes
+      <div className="flex flex-col justify-center items-center pb-[100px]">
+        <img className="w-1/2" src={border} alt="border_up" />
+        <p className="text-4xl font-dancing-script mb-6">Quotes</p>
+        <p className="text-center font-chakra-petch w-[300px] sm:w-1/2 mb-6 text-base md:text-lg">
+          Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+          isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa
+          tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+          sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+          tanda-tanda bagi kaum yang berfikir.
         </p>
-        <div className="flex flex-col">
+        <img
+          className="w-[200px] md:w-[300px] mb-4"
+          src={frame_atas_image}
+          alt="frame"
+        />
+        <p className="text-2xl md:text-4xl font-dancing-script mb-6">
+          Send Your Wishes
+        </p>
+        <div className="flex flex-col w-[300px] md:w-1/2">
           <input
-            className="border-2 w-[250px] md:w-[450px] px-2 py-1 mb-4"
+            className="border-2 px-2 py-1 mb-4 focus:outline-none font-chakra-petch"
             type="text"
             placeholder="Name"
             onChange={(e) => setNamePerson(e.target.value)}
             value={namePerson}
           />
           <textarea
-            className="border-2 w-[250px] md:w-[450px] px-2 py-1 mb-2"
+            className="border-2 px-2 py-1 mb-6 focus:outline-none font-chakra-petch"
             placeholder="Write your wishes . . ."
             onChange={(e) => setComment(e.target.value)}
             value={comment}
           />
-          <div className="flex justify-end">
+          <div className="flex justify-start">
             <button
-              className="px-2 py-1 border-2 border-black rounded-lg w-[100px]"
+              className="px-2 py-2 border-2 text-white font-bold bg-yellow-800 rounded-lg w-[100px] font-chakra-petch"
               onClick={handleClick}
             >
               Send
             </button>
           </div>
         </div>
-        <p className="mt-10 text-2xl md:text-4xl font-indie-flower">
+        <p className="mt-10 text-2xl md:text-4xl font-dancing-script">
           Best of wish
         </p>
         <Teks />
+        <img className="w-1/2" src={border} alt="border_down" />
       </div>
     </>
   );
@@ -85,9 +103,20 @@ const Teks = () => {
     <div className="w-full md:w-1/2 h-[300px] overflow-y-scroll break-words">
       {todoList.length !== 0
         ? todoList.map((item, index) => (
-            <div key={index}>
-              <p className="text-lg font-chakra-petch">{item.name}</p>
-              <p className="text-lg font-chakra-petch">{item.comment}</p>
+            <div
+              className="flex flex-col justify-start items-start"
+              key={index}
+            >
+              <div className="flex flex-row justify-center items-center">
+                <img className="w-[20px] mr-[5px]" src={dot_chat} alt="dot" />
+                <p className="text-lg font-chakra-petch font-bold">
+                  {item.name}
+                </p>
+              </div>
+
+              <p className="text-lg font-chakra-petch ml-[25px] ">
+                {item.comment}
+              </p>
             </div>
           ))
         : "Please write this .."}
