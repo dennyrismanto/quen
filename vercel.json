@@ -3,6 +3,7 @@
     { "source": "/(.*)", "destination": "/" },
     { "source": "/(.*)", "destination": "/location" },
     { "source": "/name/:name", "destination": "/:name*" },
-    { "source": "/(.*)", "destination": "/chat" }
+    { "source": "/(.*)", "destination": "/chat" },
+    { "source": "/(.*)", "destination": "/brides" }
   ]
 }
