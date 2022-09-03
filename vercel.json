@@ -1,0 +1,16 @@
+[[redirects]]
+  from = "/*"
+  to = "/name/:name"
+[[redirects]]
+  from = "/*"
+  to = "/"
+[[redirects]]
+  from = "/*"
+  to = "/location"
+[[redirects]]
+  from = "/*"
+  to = "/chat"
+[[redirects]]
+  from = "/*"
+  to = "/brides"
+  
