@@ -8,7 +8,7 @@ module.exports = {
         "chakra-petch": ["Chakra Petch", "sans-serif"],
       },
       backgroundImage: {
-        "lala-home": `url('/src/public/photos/bghome1.jpg')`,
+        "lala-home": `url('/src/public/photos/bghome1.jpeg')`,
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
