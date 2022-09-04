@@ -7,6 +7,8 @@ import { useModalChat } from "../modules/modal-chat.store";
 import border from "/src/public/photos/border.png";
 import frame_atas_image from "/src/public/photos/frame_atas.png";
 import dot_chat from "/src/public/photos/dot_chat.png";
+import bri from "/src/public/photos/bri.png";
+import bca from "/src/public/photos/bca.png";
 
 export const Chat = (props) => {
   const [namePerson, setNamePerson] = useState("");
@@ -29,6 +31,13 @@ export const Chat = (props) => {
       setComment("");
       setNamePerson("");
     }
+  };
+  const bri_copyText = () => {
+    navigator.clipboard.writeText("117301002243535");
+  };
+  const bca_copyText = () => {
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText("7655252291");
   };
   return (
     <>
@@ -79,6 +88,55 @@ export const Chat = (props) => {
           Best of wish
         </p>
         <Teks />
+        <p className="text-2xl md:text-4xl font-dancing-script my-6">
+          We’re getting Married
+        </p>
+        <p className="text-justify font-chakra-petch w-[300px] sm:w-1/2  mb-6 text-base md:text-lg">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
+          apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu
+          kepada kedua mempelai. Atas kehadiran serta doa restu, kami ucapkan
+          terima kasih.
+        </p>
+        <p className="text-justify font-chakra-petch w-[300px] sm:w-1/2 mb-6 text-base md:text-lg font-bold">
+          Untuk yang Berhalangan Hadir, dapat memberi kado secara cashless.
+        </p>
+        <div className="flex flex-row justify-center items-center gap-4">
+          <div className="flex flex-col justify-center items-center">
+            <img
+              className="w-[100px] md:w-[100px] mb-2"
+              src={bca}
+              alt="frame"
+            />
+            <p className="text-justify font-chakra-petch px-4  mb-2 text-base md:text-lg">
+              7655252291
+            </p>
+            <p className="text-justify font-chakra-petch px-4  mb-2 text-base md:text-lg">
+              a/n Amalia
+            </p>
+            <button
+              className="px-4 py-2 bg-coklat rounded-lg border-2 border-white hover:bg-orange-400 focus:bg-orange-700"
+              onClick={bca_copyText}
+            >
+              Copytext
+            </button>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <img className="w-[90px] md:w-[90px] mb-2" src={bri} alt="frame" />
+            <p className="text-justify font-chakra-petch px-4 mb-2 text-base md:text-lg">
+              117301002243535
+            </p>
+            <p className="text-justify font-chakra-petch px-4 mb-2 text-base md:text-lg">
+              a/n Denny Rismanto
+            </p>
+            <button
+              className="px-4 py-2 bg-coklat rounded-lg border-2 border-white hover:bg-orange-400 focus:bg-orange-700"
+              onClick={bri_copyText}
+            >
+              Copytext
+            </button>
+          </div>
+        </div>
+
         <img className="w-1/2" src={border} alt="border_down" />
       </div>
     </>
@@ -100,7 +158,7 @@ const Teks = () => {
     });
   }, []);
   return (
-    <div className="w-full md:w-1/2 h-[300px] overflow-y-scroll break-words">
+    <div className="w-full md:w-1/2 h-[300px] overflow-y-scroll break-words px-4">
       {todoList.length !== 0
         ? todoList.map((item, index) => (
             <div
