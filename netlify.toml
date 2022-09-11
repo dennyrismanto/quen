@@ -1,11 +1,5 @@
 [[redirects]]
-  from = "/name*"
-  to = "/name/:name"
-  status = 301
-  force = false
-  query = {path = ":name"} #  apply this rule for /old-path?path=example
-
-
-[[redirects]]
   from = "/*"
-  to = "/location"
+  to = "/index.html"
+  status = 200
+  
