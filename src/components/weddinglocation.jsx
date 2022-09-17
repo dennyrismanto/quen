@@ -41,7 +41,7 @@ export const WeddingLocation = () => {
     <>
       <NavBar />
       <div className="flex flex-col justify-center items-center pb-[100px]">
-        <p className="font-dancing-script text-4xl md:text-6xl mb-6">
+        <p className="font-dancing-script text-4xl md:text-6xl my-6">
           Our Happy Day
         </p>
         <div className="flex flex-col-reverse md:flex md:flex-row justify-center items-center mb-6">

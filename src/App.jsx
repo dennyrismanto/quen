@@ -5,6 +5,8 @@ import { useState } from "react";
 import { WeddingLocation } from "./components/weddinglocation";
 import { Chat } from "./components/chat";
 import { Bride } from "./components/bride";
+import { Galery } from "./components/gallery";
+
 import { Dialog } from "@headlessui/react";
 import video from "./public/video/windmill.mp4";
 import video_mobile from "./public/video/windmill_mobile.mp4";
@@ -14,7 +16,8 @@ import side_atas_image from "./public/photos/side_atas.png";
 import side_bawah_image from "./public/photos/side_bawah.png";
 import frame_atas_image from "./public/photos/frame_atas.png";
 import frame_bawah_image from "./public/photos/frame_bawah.png";
-import { NavBar } from "./components/navbar";
+
+import { Music } from "./components/music";
 
 function App() {
   const [Modal, setModal] = useState(true);
@@ -102,7 +105,7 @@ function App() {
                   Save the date
                 </p>
                 <p className="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch">
-                  | Tanggal masih rahasia Allah |
+                  | 15 Oktober 2022 |
                 </p>
                 <p className="text-yellow-600 text-lg pt-2 md:text-xl md:pt-6 font-chakra-petch mb-6 md:mb-14">
                   Kota Tangerang
@@ -123,6 +126,8 @@ function App() {
       <Route path="/location" component={WeddingLocation} />
       <Route path="/wishes" component={Chat} />
       <Route path="/brides" component={Bride} />
+      <Route path="/galery" component={Galery} />
+      <Music />
     </div>
   );
 }
