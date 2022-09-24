@@ -4,7 +4,7 @@ import song from "/src/public/audio/snoopdog.mp3";
 
 export const Music = () => {
   const [play, setPlay] = useState(false);
-  const myRef = useRef();
+  const myRef = useRef(null);
 
   const PlayMusic = () => {
     if (play === false) {
@@ -16,7 +16,7 @@ export const Music = () => {
 
   return (
     <>
-      <audio ref={myRef} autoPlay={true} loop>
+      <audio ref={myRef} autoPlay={true}>
         <source src={song} />
       </audio>
       <div className="absolute bottom-0 right-0 z-40">
