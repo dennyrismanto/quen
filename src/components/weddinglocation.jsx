@@ -78,7 +78,7 @@ export const WeddingLocation = () => {
                   Pukul
                 </p>
                 <p className="font-chakra-petch font-medium md:-ml-2">
-                  : 08:00 WIB - Selesai
+                  : 10:00 WIB - 20:00 WIB
                 </p>
               </div>
               <div className="flex flex-row">
@@ -125,7 +125,7 @@ export const WeddingLocation = () => {
                   Pukul
                 </p>
                 <p className="font-chakra-petch font-medium md:-ml-2">
-                  : 11:00 WIB - Selesai
+                  : 08:00 WIB - Selesai
                 </p>
               </div>
               <div className="flex flex-row">
