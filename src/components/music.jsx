@@ -16,8 +16,8 @@ export const Music = () => {
 
   return (
     <>
-      <audio loop>
-        <source src={song} ref={myRef} />
+      <audio ref={myRef} loop>
+        <source src={song} />
       </audio>
       <div className="absolute bottom-0 right-0 z-40">
         <button
