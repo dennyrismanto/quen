@@ -18,7 +18,7 @@ export const Chat = (props) => {
 
   const handleClick = (e) => {
     if ((namePerson && comment) === "") {
-      toggleNav();
+      console.log("masuk kesini");
     } else {
       const db = getDatabase();
       const postListRef = ref(db, "Wishes");
@@ -61,19 +61,21 @@ export const Chat = (props) => {
         <p className="text-2xl md:text-4xl font-dancing-script mb-6">
           Send Your Wishes
         </p>
-        <div className="flex flex-col w-[300px] md:w-1/2">
+        <form className="flex flex-col w-[300px] md:w-1/2">
           <input
             className="border-2 px-2 py-1 mb-4 focus:outline-none font-chakra-petch"
             type="text"
             placeholder="Name"
             onChange={(e) => setNamePerson(e.target.value)}
             value={namePerson}
+            required
           />
           <textarea
             className="border-2 px-2 py-1 mb-6 focus:outline-none font-chakra-petch"
             placeholder="Write your wishes . . ."
             onChange={(e) => setComment(e.target.value)}
             value={comment}
+            required
           />
           <div className="flex justify-start">
             <button
@@ -83,7 +85,7 @@ export const Chat = (props) => {
               Send
             </button>
           </div>
-        </div>
+        </form>
         <p className="mt-10 text-2xl md:text-4xl font-dancing-script">
           Best of wish
         </p>
