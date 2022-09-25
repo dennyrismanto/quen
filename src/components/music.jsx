@@ -13,10 +13,13 @@ export const Music = () => {
       myRef.current.play();
     }
   };
+  // useEffect(() => {
+  //   myRef.autoplay();
+  // }, []);
 
   return (
     <>
-      <audio ref={myRef} autoPlay="true" preLoad="auto">
+      <audio controls ref={myRef} autoPlay={true}>
         <source src={song} />
       </audio>
       <div className="absolute bottom-0 right-0 z-40">
