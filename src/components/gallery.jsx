@@ -13,24 +13,24 @@ export const Galery = () => {
       <div className="flex flex-col justify-center items-center pb-[100px]">
         <p className="font-dancing-script text-4xl my-6">Gallery a moments</p>
         <div className="flex flex-row gap-[10px] mb-6">
-          <div className="bg-black w-[182px] h-[259px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
+          <div className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
             <img
-              className="bg-black w-[182px] h-[259px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
+              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
               src={g1}
               alt="side1"
             />
           </div>
           <div className="flex flex-col gap-y-[10px]">
-            <div className="bg-black w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
+            <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
                 src={g2}
                 alt="side1"
               />
             </div>
-            <div className="bg-black w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
+            <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
                 src={g3}
                 alt="side1"
               />
@@ -40,24 +40,24 @@ export const Galery = () => {
 
         <div className="flex flex-row gap-[10px]">
           <div className="flex flex-col gap-y-[10px]">
-            <div className="bg-black w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
+            <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
                 src={g4}
                 alt="side1"
               />
             </div>
-            <div className="bg-black w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
+            <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[182px] h-[124px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
                 src={g5}
                 alt="side1"
               />
             </div>
           </div>
-          <div className="bg-black w-[182px] h-[259px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
+          <div className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
             <img
-              className="bg-black w-[182px] h-[259px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
+              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
               src={g6}
               alt="side1"
             />

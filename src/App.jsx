@@ -62,7 +62,12 @@ function App() {
                     {decodeURIComponent(params.name)}
                   </p>
                   <div className="mt-6">
-                    <Link href="/">
+                    <Link
+                      href="/"
+                      onClick={() => {
+                        window.location.reload();
+                      }}
+                    >
                       <button className="px-4 py-2 font-chakra-petch text-white font-bold rounded-md border-white bg-coklat focus:outline-none focus:ring focus:ring-white">
                         Open Invitation
                       </button>

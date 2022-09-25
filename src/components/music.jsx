@@ -13,29 +13,32 @@ export const Music = () => {
       myRef.current.play();
     }
   };
-  // useEffect(() => {
-  //   myRef.current.play();
-  // }, [myRef]);
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      window.onload = function () {
+        myRef.current.play();
+      };
+    }
+  }, [myRef]);
 
   return (
     <>
-      {/* <audio ref={myRef} autoPlay={true} loop={true} preload="true">
+      <audio ref={myRef} autoPlay={true} loop={true} id="my_audio">
         <source src={song} type="audio/mp3" />
-      </audio> */}
-      <audio
+      </audio>
+      {/* <audio
         ref={myRef}
         autoPlay={true}
         loop={true}
-        preload="true"
         src={song}
         type="audio/mp3"
-      />
+      /> */}
 
       <div className="absolute bottom-0 right-0 z-40">
         <button
           onClick={() => {
             setPlay(!play);
-            PlayMusic(play);
+            PlayMusic();
           }}
         >
           {play === true ? (
