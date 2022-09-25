@@ -13,14 +13,14 @@ export const Music = () => {
       myRef.current.play();
     }
   };
-  useEffect(() => {
-    myRef.current.play();
-  }, [myRef]);
+  // useEffect(() => {
+  //   myRef.current.play();
+  // }, [myRef]);
 
   return (
     <>
       {/* <ReactAudioPlayer src={song} ref={myRef} autoPlay /> */}
-      <audio ref={myRef} autoPlay={true}>
+      <audio ref={myRef} autoPlay={"autoPlay"} loop muted>
         <source src={song} />
       </audio>
       <div className="absolute bottom-0 right-0 z-40">
