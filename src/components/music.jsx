@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 import song from "/src/public/audio/snoopdog.mp3";
 
@@ -19,9 +20,10 @@ export const Music = () => {
 
   return (
     <>
-      <audio controls ref={myRef} autoPlay={true}>
+      <ReactAudioPlayer src={song} ref={myRef} autoPlay />
+      {/* <audio ref={myRef} autoPlay={true}>
         <source src={song} />
-      </audio>
+      </audio> */}
       <div className="absolute bottom-0 right-0 z-40">
         <button
           onClick={() => {
