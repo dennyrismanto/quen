@@ -19,14 +19,18 @@ export const Music = () => {
 
   return (
     <>
+      {/* <audio ref={myRef} autoPlay={true} loop={true} preload="true">
+        <source src={song} type="audio/mp3" />
+      </audio> */}
       <audio
         ref={myRef}
-        onLoad={() => {
-          myRef.current.play();
-        }}
-      >
-        <source src={song} />
-      </audio>
+        autoPlay={true}
+        loop={true}
+        preload="true"
+        src={song}
+        type="audio/mp3"
+      />
+
       <div className="absolute bottom-0 right-0 z-40">
         <button
           onClick={() => {
