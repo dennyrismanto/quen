@@ -19,8 +19,12 @@ export const Music = () => {
 
   return (
     <>
-      {/* <ReactAudioPlayer src={song} ref={myRef} autoPlay /> */}
-      <audio ref={myRef} autoPlay={"autoPlay"} loop muted>
+      <audio
+        ref={myRef}
+        onLoad={() => {
+          myRef.current.play();
+        }}
+      >
         <source src={song} />
       </audio>
       <div className="absolute bottom-0 right-0 z-40">
