@@ -6,7 +6,7 @@ export const Bride = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col justify-center items-center mb-[60px]">
+      <div className="flex flex-col justify-center items-center pb-[100px]">
         <div className="flex flex-col justify-center items-center p-4 mt-14">
           <p className="mt-6 text-2xl font-bold mb-4">
             بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ

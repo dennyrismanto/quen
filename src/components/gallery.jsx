@@ -11,7 +11,9 @@ export const Galery = () => {
     <>
       <NavBar />
       <div className="flex flex-col justify-center items-center pb-[100px]">
-        <p className="font-dancing-script text-4xl my-6">Gallery a moments</p>
+        <p className="font-dancing-script text-4xl my-6">
+          Gallery of Our Moment
+        </p>
         <div className="flex flex-row gap-[10px] mb-6">
           <div className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
             <img

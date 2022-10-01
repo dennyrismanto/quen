@@ -18,7 +18,7 @@ export const Chat = (props) => {
 
   const handleClick = (e) => {
     if ((namePerson && comment) === "") {
-      console.log("masuk kesini");
+      console.log("Please fill this");
     } else {
       const db = getDatabase();
       const postListRef = ref(db, "Wishes");
@@ -179,7 +179,7 @@ const Teks = () => {
               </p>
             </div>
           ))
-        : "Please write this .."}
+        : "Please write here .."}
     </div>
   );
 };
