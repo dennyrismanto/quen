@@ -15,7 +15,7 @@ export const Galery = () => {
         <div className="flex flex-row gap-[10px] mb-6">
           <div className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
             <img
-              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
+              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg animate__animated animate__fadeIn"
               src={g1}
               alt="side1"
             />
@@ -23,14 +23,14 @@ export const Galery = () => {
           <div className="flex flex-col gap-y-[10px]">
             <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg animate__animated animate__fadeIn"
                 src={g2}
                 alt="side1"
               />
             </div>
             <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg animate__animated animate__fadeIn"
                 src={g3}
                 alt="side1"
               />
@@ -42,14 +42,14 @@ export const Galery = () => {
           <div className="flex flex-col gap-y-[10px]">
             <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg animate__animated animate__fadeIn"
                 src={g4}
                 alt="side1"
               />
             </div>
             <div className="bg-black w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg">
               <img
-                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg"
+                className="w-[165px] h-[113px] md:w-[300px] md:h-[208.5px] rounded-lg shadow-lg animate__animated animate__fadeIn"
                 src={g5}
                 alt="side1"
               />
@@ -57,7 +57,7 @@ export const Galery = () => {
           </div>
           <div className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg">
             <img
-              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg"
+              className="bg-black w-[165px] h-[236px] md:w-[300px] md:h-[427px] rounded-lg shadow-lg animate__animated animate__fadeIn"
               src={g6}
               alt="side1"
             />

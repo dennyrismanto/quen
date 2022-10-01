@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 
-import song from "/src/public/audio/snoopdog.mp3";
+import song from "/src/public/audio/music_cover.mp3";
 
 export const Music = () => {
   const [play, setPlay] = useState(false);

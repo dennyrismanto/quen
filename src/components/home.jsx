@@ -18,7 +18,7 @@ export const Home = () => {
           ></img>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <p className="text-yellow-600 mt-28 text-3xl md:text-6xl font-indie-flower font-bold">
+          <p className="text-yellow-600 mt-28 text-3xl md:text-6xl font-indie-flower font-bold animate__animated animate__fadeInUp">
             The Wedding
           </p>
           <p className="text-yellow-600 text-base md:text-xl font-chakra-petch">
@@ -29,7 +29,7 @@ export const Home = () => {
             src={frame_atas_image}
             alt="frame"
           />
-          <p className="text-yellow-600 m-2 md:p-0 text-4xl md:text-6xl font-dancing-script font-bold">
+          <p className="text-yellow-600 m-2 md:p-0 text-4xl md:text-6xl font-dancing-script font-bold animate__animated animate__fadeInUp">
             {`Amalia & Denny`}
           </p>
           <img
